@@ -1,0 +1,49 @@
+.header {
+   margin-bottom: 0;
+   background-color: transparent;
+   width: 290px;
+   height: 100%;
+ }
+
+.header__inner {
+}
+
+.logo {
+  img {
+    margin-bottom: 10px;
+  }
+  margin-bottom: 20px;
+}
+
+.phone {
+  font-size: 22px;
+  font-family: $font-family_bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.gray_desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.menu-mobile {
+  transition: all 0.5s;
+  opacity: 0;
+  height: 0;
+  margin-bottom: 40px;
+}
+
+.menu-mobile_opened {
+  transition: all 0.5s;
+  opacity: 1;
+  height: auto;
+}
+
+.call {
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}

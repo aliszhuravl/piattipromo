@@ -1,0 +1,153 @@
+.popup_wrapper {
+  position: fixed;
+  background: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  button {
+    width: 100%;
+  }
+}
+
+.popup_color {
+  position: fixed;
+  background: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+
+.wrappershow {
+  display: block;
+}
+
+.popup {
+  width: 320px;
+  height: 380px;
+  background-color: $color-white;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  top: 25%;
+  z-index: 4;
+}
+
+.inp-conf {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 20px;
+  }
+}
+
+.pop-inner {
+  padding: 40px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.closepop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #DE211C;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.cross-pop {
+  cursor: pointer;
+}
+
+.poph {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.pop-text {
+  margin-bottom: 20px;
+}
+
+.pophide {
+  display: none;
+}
+
+.cross_p {
+  position: absolute;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  margin: auto;
+  //&:after {
+  //  transform: rotate(45deg);
+  //  background: #fff;
+  //  content: '';
+  //  width: 2px;
+  //  height: 30px;
+  //  position: absolute;
+  //  top: 0;
+  //  right: 50%;
+  //}
+  //&:before {
+  //  position: absolute;
+  //  transform: rotate(-45deg);
+  //  background: #fff;
+  //  content: '';
+  //  width: 2px;
+  //  height: 30px;
+  //  top: 0;
+  //  right: 50%;
+  //}
+}
+
+.pop_color {
+  background-image: url('../img/wood.jpg');
+}
+
+@media (max-width: 800px) {
+  .popup {
+    width: 100%;
+  }
+  .pop-text {
+    margin-top: 0;
+  }
+  .poph {
+    padding-top: 0;
+    font-size: 20px;
+  }
+}
+
+.error_input {
+  border: 1px solid red;
+}
+
+.message-block {
+  color: red;
+}

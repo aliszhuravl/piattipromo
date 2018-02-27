@@ -1,0 +1,170 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-gray-40;
+  color: #fff;
+  font-family: $font-family;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 20px;
+  height: 40px;
+  letter-spacing: 1px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+  
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+.btn_red {
+  border-color: #de211c;
+  color: #de211c;
+}
+
+.btn_all_red {
+  background-color: #de211c;
+  border-color: #de211c;
+  padding: 5px 20px;
+  &:hover {
+    background-color: #de211c;
+    border-color: #de211c;
+    opacity: 0.8;
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_standart {
+  border-color: $color-blue-30;
+  background-color: $color-blue-30;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-50;
+    background-color: $color-blue-50;
+  }
+
+  &:active {
+    border-color: darken($color-blue-50, 5%);
+    background-color: darken($color-blue-50, 5%);
+  }
+}
+
+
+.btn_attach {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: $color-blue-30;
+  font-family: $font-family_bold;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_go {
+  padding: 5px 50px 5px 24px;
+  background-image: url('../img/arik.png');
+  background-repeat: no-repeat;
+  background-position: 90px center;
+}
+
+.btn_dl {
+  padding: 5px 50px 5px 24px;
+  background-image: url('../img/arikd.png');
+  background-repeat: no-repeat;
+  background-position: 90px center;
+}
+
+.arr_next,
+ .arr_prev {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.minus {
+  &:before {
+    height: 0 !important;
+    transition: all 0.4s;
+  }
+}

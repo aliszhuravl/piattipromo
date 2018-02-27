@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Bruno Piatti</title>
+</head>
+<body>
+<div class="page-container">
+    <main class="page">
+        <div class="page__inner map__block">
+            <header class="header">
+                <div class="header__inner">
+                   <div class="logo">
+                       <div class="close">
+                           <button class="hamburger">
+                               <span></span>
+                           </button>
+                       </div>
+                       <div class="logo_box">
+                           <a href="index.html"><img src="img/logo.png" alt="#"></a>
+                           <p class="gray_desc">Швейцарские кухни в России</p>
+                       </div>
+                       <div class="call">
+                           <img src="img/phone.svg" alt="#">
+                       </div>
+                       <a href="tel:88127751034" class="phone">+7 (812) 775-10-34</a>
+                   </div>
+                    <div class="menu">
+                        <div class="accordion">
+                            <ul class="accordion__list">
+                                <li class="accordion__item" id="cat_acc">
+                                    <div class="accordion__btn" id="plus">
+                                        <p class="accordion__text"><a class="nav__link catal__link" href="catalog.html">Каталог</a></p>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <p><a class="nav__link" href="item.html">Antara</a></p>
+                                        <p>Strada</p>
+                                        <p>Star</p>
+                                        <p>Eterno</p>
+                                        <p>Primo</p>
+                                        <p>Serena</p>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__btn no-acc">
+                                        <p class="accordion__text"><a class="nav__link" href="about.html">О бренде</a></p>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__btn no-acc">
+                                        <p class="accordion__text"><a class="nav__link" href="design.html">Дизайнерам</a></p>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__btn no-acc">
+                                        <p class="accordion__text"><a class="nav__link" href="contacts.html">Контакты</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile">
+                    <div class="accordion acc_mobile">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text "><a class="nav__link catal__link" href="catalog.html">Каталог</a></p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p><a class="nav__link" href="item.html">Antara</a></p>
+                                    <p>Strada</p>
+                                    <p>Star</p>
+                                    <p>Eterno</p>
+                                    <p>Primo</p>
+                                    <p>Serena</p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn no-acc">
+                                    <p class="accordion__text"><a class="nav__link" href="about.html">О бренде</a></p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn no-acc">
+                                    <p class="accordion__text"><a class="nav__link" href="design.html">Дизайнерам</a></p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn no-acc">
+                                    <p class="accordion__text"><a class="nav__link" href="contacts.html">Контакты</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content__inner">
+
+                <section class="page__item">
+                    <h2 class="sub_title">
+                        Контакты
+                    </h2>
+                    <div class="b_divider"></div>
+
+                    <div class="map__box">
+                        <div class="map_info">
+                            <a href="tel:88127751034" class="phone">+7 (812) 775-10-34</a>
+                            <a href="#" class="light_link">info@brunopiatti.ru</a>
+
+                            <div>
+                                <p class="gray_desc">Адрес:</p>
+                                <p>Санкт-Петербург, Кантемировская ул.,
+                                    д. 37 (Мебель-Сити 2),
+                                    1-й этаж, секция № 1.5</p>
+                            </div>
+
+                            <p class="gray_desc">Время работы:</p>
+                            <p>с 11:00 до 21:00</p>
+                        </div>
+                        <div class="map__inner">
+                            <div class="map" id="map1"></div>
+                        </div>
+                    </div>
+
+                </section>
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div>
+                            <p>© Бруно Пьятти 2017</p>
+                            <p>info@brunopiatti.ru</p>
+                        </div>
+                        <p>its.agency</p>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </main>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_KN38WFcmjBkbBmjdxukx5r8Q3wnm8ig"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

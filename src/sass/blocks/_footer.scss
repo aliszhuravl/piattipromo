@@ -1,0 +1,33 @@
+.footer {
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  opacity: 0.5;
+  p {
+    width: 290px;
+  }
+  div {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding:0 20px;
+    width: 100%;
+
+    .footer__inner {
+      justify-content: space-between;
+    }
+    p {
+      width: auto;
+    }
+  }
+  .footer__inner div {
+    display: block;
+  }
+}
